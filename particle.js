@@ -1,6 +1,6 @@
 function Particle() {
-  this.pos = createVector(0,0);
-  this.vel = createVector(0,0);
+  this.pos = createVector(random(width/4),random(height/3));
+  this.vel = p5.Vector.random2D();
   this.acc = createVector(0,0);
   
   this.update = function(){
