@@ -1,4 +1,4 @@
-var inc = 0.1;
+var inc = 0.01;
 var scl = 10; //scale
 var cols, rows;
 
@@ -32,9 +32,6 @@ function draw() {
         //var v = createVector();
         var v = p5.Vector.fromAngle(angle);
         xoff += inc;
-        //fill(random(255));
-        //fill(r);
-        //rect(x*scl, y*scl, scl, scl);
         stroke(255);
         push();
         translate(x*scl,y*scl);
