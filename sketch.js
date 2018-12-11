@@ -8,11 +8,11 @@ var zoff=0;
 
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(1600, 900);
   
   //pixelDensity(1); //we did for mac retina WHEN WE USE PIXEL FUNCTION
-  cols = floor((width/2)/scl);
-  rows = floor((height/2)/scl);
+  cols = floor((width/4)/scl);
+  rows = floor((height/3)/scl);
 }
 
 function draw() {
