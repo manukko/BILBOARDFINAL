@@ -13,7 +13,9 @@ function setup() {
   cols = floor((width/2)/scl);
   rows = floor((height/2)/scl);
   
-  particles[0] = new Particle();
+  for(var i=0; i<100;i++){
+   particles[i] = new Particle();
+  }
 }
 
 function draw() {
@@ -46,8 +48,9 @@ function draw() {
     zoff += 0.01;
   }  
   
-  particles[0].update();
-  particles[0].show();
- 
+  for(var i=0; i<particles.length;i++){
+    particles[i].update();
+    particles[i].show();
+  }
   
 }
