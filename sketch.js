@@ -1,18 +1,19 @@
-//var xoff1 = 0;
-//var xoff2 = 1110;
 var inc = 0.1;
 var scl = 10; //scale
 var cols, rows;
 
 var zoff=0;
 
+var particle = [];
 
 function setup() {
-  createCanvas(1600, 900);
+  createCanvas(500, 500);
   
   //pixelDensity(1); //we did for mac retina WHEN WE USE PIXEL FUNCTION
-  cols = floor((width/4)/scl);
-  rows = floor((height/3)/scl);
+  cols = floor((width/2)/scl);
+  rows = floor((height/2)/scl);
+  
+  particle[0] = new Particle();
 }
 
 function draw() {
@@ -44,7 +45,9 @@ function draw() {
     
     zoff += 0.01;
   }  
+  
+  particle[0].update();
+  particle[0].show();
  
   
 }
- 
