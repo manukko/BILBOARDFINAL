@@ -3,7 +3,7 @@ var img;
 function preload()
 {
   // load image
-  img = loadImage("qr.png");
+  img = loadImage("frame.png");
 }
 
 
