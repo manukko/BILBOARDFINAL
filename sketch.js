@@ -4,7 +4,7 @@ var cols, rows;
 
 var zoff=0;
 
-var particle = [];
+var particles = [];
 
 function setup() {
   createCanvas(500, 500);
@@ -13,7 +13,7 @@ function setup() {
   cols = floor((width/2)/scl);
   rows = floor((height/2)/scl);
   
-  particle[0] = new Particle();
+  particles[0] = new Particle();
 }
 
 function draw() {
@@ -46,8 +46,8 @@ function draw() {
     zoff += 0.01;
   }  
   
-  particle[0].update();
-  particle[0].show();
+  particles[0].update();
+  particles[0].show();
  
   
 }
