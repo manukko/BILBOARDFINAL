@@ -15,6 +15,11 @@ var canh = screen.height;
 
 var s = 4;
 
+function preload(){
+
+    img = loadImage('parallel_qr_to_ar.png');
+  }
+
 function setup() {
   createCanvas(canw, canh);
   cols = floor(width/scl);
