@@ -9,8 +9,13 @@ var particles = [];
 
 var flowfield;
 
+var canh = 1440;
+var canw = 900;
+
+var s = 4;
+
 function setup() {
-  createCanvas(1280, 800);
+  createCanvas(canw, canh);
   cols = floor(width/scl);
   rows = floor(height/scl);
   
@@ -24,10 +29,10 @@ function setup() {
    fill(255);
    textSize(120);
    textAlign(CENTER);
-   text('find me!', 640, 300);
+   text('find me!', canw/2, canh/3);
  
-   a = random(1280);
-   b = random(800);
+   a = random(canw);
+   b = random(canh);
 }
 
 function draw() {
@@ -69,8 +74,8 @@ function mousePressed() {
   //create stars each mouse click
   fill(255);
   noStroke();
-  quad(a-2, b, a, b+2, a+2, b, a, b-2);
-  a = random(1280);
-  b = random(800);
+  quad(a-s, b, a, b+s, a+s, b, a, b-s);
+  a = random(canw);
+  b = random(canh);
  
 }
