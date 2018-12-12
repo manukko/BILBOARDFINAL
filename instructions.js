@@ -8,12 +8,12 @@ function preload()
 
 
 function setup() {
-  createCanvas(1600, 900);
+  createCanvas(1280, 800);
   background(0);
   
   //define random positions of stars
-  x = random(1600);
-  y = random(900);
+  x = random(1280);
+  y = random(800);
   
   
   //load QR code
@@ -23,9 +23,9 @@ function setup() {
   
   //write text
   fill(255);
-  textSize(100);
+  textSize(120);
   textAlign(CENTER);
-  text('find me!', 800, 300);
+  text('find me!', 640, 250);
   
   
 }
@@ -38,9 +38,9 @@ function mousePressed() {
   //create stars each mouse click
   fill(255);
   noStroke();
-  ellipse(x,y,5,5);
+  ellipse(x,y,30,30);
 
-  x = random(1600);
-  y = random(900);
+  x = random(1280);
+  y = random(800);
  
 }
