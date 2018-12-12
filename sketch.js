@@ -34,9 +34,20 @@ function setup() {
  
    a = random(canw);
    b = random(canh);
+  
+  for(var i=0; i<30; i++){
+    fill(255);
+    noStroke();
+    quad(a-s, b, a, b+s, a+s, b, a, b-s);
+    a = random(canw);
+    b = random(canh);
+  }
+    
 }
 
 function draw() {
+  
+  
  
   var yoff = 0;
   for(var y = 0; y<rows; y++) {
