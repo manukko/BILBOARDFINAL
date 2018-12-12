@@ -1,12 +1,4 @@
 
-var img;
- 
-function preload()
-{
-  // load image
-  img = loadImage("frame.png");
-}
-
 var inc = 0.01;
 var scl = 5; //scale
 var cols,rows;
@@ -29,10 +21,14 @@ function setup() {
      particles[i] = new Particle();
   }
    background(0);
+ 
    fill(255);
    textSize(100);
    textAlign(CENTER);
    text('find me!', 800, 300);
+ 
+   a = random(1600);
+   b = random(900);
 }
 
 function draw() {
@@ -68,16 +64,14 @@ function draw() {
      particles[i].show();
      
   }
+}
  
- function mousePressed() {
+function mousePressed() {
   //create stars each mouse click
   fill(255);
   noStroke();
-  ellipse(x,y,5,5);
-
-  x = random(1600);
-  y = random(900);
+  ellipse(a,b,20,20);
+  a = random(1600);
+  b = random(900);
  
-}
-  
 }
