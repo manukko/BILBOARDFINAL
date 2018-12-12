@@ -1,3 +1,12 @@
+
+var img;
+ 
+function preload()
+{
+  // load image
+  img = loadImage("frame.png");
+}
+
 var inc = 0.01;
 var scl = 5; //scale
 var cols,rows;
@@ -20,6 +29,10 @@ function setup() {
      particles[i] = new Particle();
   }
    background(0);
+   fill(255);
+   textSize(100);
+   textAlign(CENTER);
+   text('find me!', 800, 300);
 }
 
 function draw() {
