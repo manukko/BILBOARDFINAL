@@ -21,6 +21,7 @@ function preload(){
     img = loadImage('parallel_qr_to_ar.png');
   }
 
+
 function setup() {
   createCanvas(canw, canh);
   cols = floor(width/scl);
@@ -48,6 +49,8 @@ function setup() {
     a = random(canw);
     b = random(canh);
   }
+    
+    image(img,200, 200, img.width, img.height);
     
 }
 
@@ -90,7 +93,7 @@ function draw() {
  
 function mousePressed() {
   //create stars each mouse click
-  image(img,200, 200, 50, 50)
+  
   fill(255);
   noStroke();
   quad(a-s, b, a, b+s, a+s, b, a, b-s);
