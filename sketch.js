@@ -14,6 +14,7 @@ var canh = screen.height;
 
 
 var s = 4;
+var img;
 
 function preload(){
 
@@ -89,6 +90,7 @@ function draw() {
  
 function mousePressed() {
   //create stars each mouse click
+  image(img,200, 200, 50, 50)
   fill(255);
   noStroke();
   quad(a-s, b, a, b+s, a+s, b, a, b-s);
