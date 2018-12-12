@@ -11,24 +11,24 @@ var flowfield;
 
 
 function setup() {
-  createCanvas(1600, 900);
+  createCanvas(12800, 800);
   cols = floor(width/scl);
   rows = floor(height/scl);
   
   flowfield = new Array(cols * rows);
   
-  for (var i=0; i<10000; i++){
+  for (var i=0; i<8000; i++){
      particles[i] = new Particle();
   }
    background(0);
  
    fill(255);
-   textSize(100);
+   textSize(120);
    textAlign(CENTER);
-   text('find me!', 800, 300);
+   text('find me!', 640, 300);
  
-   a = random(1600);
-   b = random(900);
+   a = random(1280);
+   b = random(800);
 }
 
 function draw() {
@@ -70,7 +70,7 @@ function mousePressed() {
   //create stars each mouse click
   fill(255);
   noStroke();
-  ellipse(a,b,20,20);
+  quad(a-5, b, a, b+5, a+5, b, a, b-5);
   a = random(1600);
   b = random(900);
  
