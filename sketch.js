@@ -11,7 +11,7 @@ var flowfield;
 
 
 function setup() {
-  createCanvas(12800, 800);
+  createCanvas(1280, 800);
   cols = floor(width/scl);
   rows = floor(height/scl);
   
@@ -70,7 +70,7 @@ function mousePressed() {
   //create stars each mouse click
   fill(255);
   noStroke();
-  quad(a-5, b, a, b+5, a+5, b, a, b-5);
+  quad(a-2, b, a, b+2, a+2, b, a, b-2);
   a = random(1600);
   b = random(900);
  
