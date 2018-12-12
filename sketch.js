@@ -68,5 +68,16 @@ function draw() {
      particles[i].show();
      
   }
+ 
+ function mousePressed() {
+  //create stars each mouse click
+  fill(255);
+  noStroke();
+  ellipse(x,y,5,5);
+
+  x = random(1600);
+  y = random(900);
+ 
+}
   
 }
