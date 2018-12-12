@@ -50,7 +50,7 @@ function setup() {
     b = random(canh);
   }
     
-    image(img,200, 200, img.width, img.height);
+    image(img,200, 200, 200, 200);
     
 }
 
