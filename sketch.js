@@ -9,8 +9,9 @@ var particles = [];
 
 var flowfield;
 
-var canh = 1440;
-var canw = 900;
+var canw = screen.width;
+var canh = screen.height;
+
 
 var s = 4;
 
